@@ -39,9 +39,9 @@ const d = new Date();
   p2.textContent = d.toLocaleString();  
   p.style="font-size:20px;font-weight:bold;";
   p.textContent=document.getElementById('tarea').value;
-  p.classList.add('col-3')
-  p2.classList.add('col-3')
-  but2.classList.add('col-3')
+  p.classList.add('col-4')
+  p2.classList.add('col-4')
+  but2.classList.add('col-4')
 
   cl.appendChild(p);
   cl.appendChild(p2);
