@@ -9,10 +9,9 @@ function add(){
 
   cl.classList.add('p-2');
   cl.classList.add('m-2');
-  cl.style="min-width:200px; overflow-wrap: anywhere";
+  cl.style="min-width:200px; overflow-wrap: anywhere;align-items: center";
 
   cl.classList.add('justify-content-between'); 
-  cl.classList.add('align-middle');
   let nombre = 'lista'+i;
   console.log(nombre);
   cl.id=nombre;
