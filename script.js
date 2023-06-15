@@ -6,8 +6,10 @@ function add(){
   cl.classList.add('container');
   cl.classList.add('d-flex'); 
   cl.classList.add('flex-row'); 
-  cl.style="overflow:auto;";
 
+  cl.classList.add('p-2');
+  cl.classList.add('m-2');
+  cl.style="min-width:200px; overflow-wrap: anywhere";
 
   cl.classList.add('justify-content-between'); 
   cl.classList.add('align-middle');
@@ -15,8 +17,7 @@ function add(){
   console.log(nombre);
   cl.id=nombre;
   cl.classList.add('bg-warning');
-  cl.classList.add('p-2');
-  cl.classList.add('m-2');
+  
   cl.classList.add('rounded');
   document.getElementById('contenedor').appendChild(cl);
 
@@ -31,9 +32,6 @@ function add(){
     document.getElementById(nombre).remove();
   }
   but.textContent="X";
-p.classList.add('col-3');
-but2.classList.add('col-3');
-p2.classList.add('col-3');
 
 
   but2.type="checkbox";
@@ -41,7 +39,10 @@ p2.classList.add('col-3');
 const d = new Date();
   p2.textContent = d.toLocaleString();  
   p.style="font-size:20px;font-weight:bold;";
-  p.textContent='• '+document.getElementById('tarea').value;
+  p.textContent=document.getElementById('tarea').value;
+  p.classList.add('col-3')
+  p2.classList.add('col-3')
+  but2.classList.add('col-3')
 
   cl.appendChild(p);
   cl.appendChild(p2);
